@@ -1,0 +1,18 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.log
+
+# macOS
+.DS_Store
+
+# 测试产物（dotnet test --collect:"XPlat Code Coverage" 落的覆盖率与 TestResults）
+TestResults/
+*.cobertura.xml
+coverage.*.xml
+
+# 本地 publish 产物（dotnet publish 落在仓根的 publish/）不入库
+publish/
+*.tar.gz

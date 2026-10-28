@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- 本仓还原图只到 ① aether-ledger（BouncyCastle）——无 ⑥ Lean 那条 2018 老包传递链，不需要传递钉。 -->
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 钱包 UI：Avalonia 12.1.4 一条线，与 ⑮ aether-ai-app 同版本；
+         移动 head（Android/iOS）与桌面 head 共用同一份 View/VM。 -->
+    <PackageVersion Include="Avalonia" Version="12.1.4" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.1.4" />
+    <PackageVersion Include="Avalonia.Android" Version="12.1.4" />
+    <PackageVersion Include="Avalonia.iOS" Version="12.1.4" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.4" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.15" />
+  </ItemGroup>
+</Project>

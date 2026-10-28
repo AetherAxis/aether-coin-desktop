@@ -1,0 +1,11 @@
+<Solution>
+  <!-- 虚拟币线的 GUI 仓（2026-10-28 自 ⑯ aether-coin-hosts 拆出）：钱包 UI 一个核三个头——
+       Wallet.App（共享 View/VM，零平台 API）+ 桌面/Android/iOS 三个 head，
+       形态同 ⑮ aether-ai-app 的方案A（共享 net10.0 库 + 平台 head）。
+       引擎在 ① aether-ledger（纯库），本仓只做 UI，不实现任何链逻辑。
+       移动 head 进解决方案只为 IDE 可见——CI 在 ubuntu 上只构建 App/Desktop（见 ci.yml）。 -->
+  <Project Path="Aether.Ledger.Wallet.App/Aether.Ledger.Wallet.App.csproj" />
+  <Project Path="Aether.Ledger.Wallet.Desktop/Aether.Ledger.Wallet.Desktop.csproj" />
+  <Project Path="Aether.Ledger.Wallet.Android/Aether.Ledger.Wallet.Android.csproj" />
+  <Project Path="Aether.Ledger.Wallet.iOS/Aether.Ledger.Wallet.iOS.csproj" />
+</Solution>
